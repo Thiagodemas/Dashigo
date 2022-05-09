@@ -43,8 +43,6 @@ export function makeServer() {
       this.get("/users", function (schema, request) {
         const { page = 1, per_page = 10 } = request.queryParams;
 
-        console.log('teste', page, per_page);
-
         const pageAsNumber = Number(page);
         const perPageAsNumber = Number(per_page);
 
